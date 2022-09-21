@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input width="300" id = "a" type ="text" > <br> <br>
+    <input  width="300" id = "b" type ="text" > <br> <br>  
+    <button  width="300" onclick="change()">Change</button>
+  
+    <script>
+
+        function change(){
+                var tmp = document.getElementById("a").value;
+                document.getElementById("a").value = document.getElementById("b").value;
+                document.getElementById("b").value = tmp;
+        }
+    </script>
+
+
+</body>
+
+</html>
